@@ -22,7 +22,7 @@ function Header() {
   }, [])
   return (
     <header className={`${scrolled ? 'bg-[#141414]' : 'bg-transparent'}`}>
-      <div className="flex items-center space-x-3 md:space-x-10">
+      <div className="flex items-center space-x-2 md:space-x-10">
         <img
           src="https://rb.gy/ulxxee"
           alt="Netflix logo"
@@ -32,7 +32,9 @@ function Header() {
         />
 
         <ul className="hidden space-x-4 md:flex">
-          <li className="headerLink">Home</li>
+          <li className="headerLink cursor-default font-semibold text-white hover:text-white">
+            Home
+          </li>
           <li className="headerLink">Tv Shows</li>
           <li className="headerLink">Movies</li>
           <li className="headerLink">New & Popular</li>
